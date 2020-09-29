@@ -2,6 +2,14 @@
     background-color: black;
 }
 
+.search-button {
+    color: red;
+}
+
+.search-border {
+    border-color: darkgray;
+}
+
 .rounded-50 {
     border-radius: 50px;
 }
