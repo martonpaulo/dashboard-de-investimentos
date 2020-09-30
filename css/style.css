@@ -16,6 +16,7 @@
 }
 
 h3,
+h4,
 h5,
 p {
     font-family: 'Poppins', sans-serif;
@@ -24,6 +25,11 @@ p {
 
 h3 {
     font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 h5 {
@@ -40,6 +46,7 @@ p {
 
 .border-bottom {
     border-color: var(--light-gray) !important;
+    border-width: 2.5px !important;
 }
 
 .rounded-50 {
@@ -60,7 +67,9 @@ p {
     color: var(--pink);
 }
 
-.fa { transform: scale(0.8, 0.8); }
+.fa {
+    transform: scale(0.8, 0.8);
+}
 
 .fa-heart,
 .fa-cog,
@@ -97,18 +106,6 @@ p {
     }
 }
 
-.stock-name, .stock-variation, .stock-price {
-    display: inline-block;
-    margin: 0 auto;
-}
-
-.stock-summary {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
 .container-highest {
     display: flex;
     flex-direction: column;
@@ -120,11 +117,17 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    margin: 5% 10% 5% 10%;
 }
 
-.text-canto {
-    margin-left: 3%;
+.highest > h4,
+.lowest > h4 {
+    margin-bottom: 25px;
+}
+
+.stock-summary {
+    display: flex;
+    justify-content: space-between;
 }
 
 .grafico-ini {
