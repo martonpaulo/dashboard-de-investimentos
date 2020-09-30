@@ -96,3 +96,80 @@ p {
         font-size: 3em;
     }
 }
+
+.stock-name, .stock-variation, .stock-price {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.stock-summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.container-highest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.highest, .lowest {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.text-canto {
+    margin-left: 3%;
+}
+
+.grafico-ini {
+    height: 35%;
+    width: 72%;
+    background-color: #2F3035;
+    border-radius: 3% / 8%;
+    margin-left: 3.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.escolha-graf {
+    display: flex;
+    width: 30%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 5%;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.escolha-bolsa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 90%;
+}
+
+.bolsa-imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    align-self: center;
+}
+
+.grafico-imagem {
+    width: 65%;
+    height: 90%;
+}
