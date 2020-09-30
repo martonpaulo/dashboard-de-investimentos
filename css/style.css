@@ -1,21 +1,72 @@
-.bg-black {
-    background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --background: #393c45;
+    --dark-gray: #2f3035;
+    --gray: #4c4d4f;
+    --light-gray: #8d9097;
+    --red: #f92e3a;
+    --green: #33dd4e;
+    --pink: #e4558d;
+    --white: #fafbfd;
+}
+
+.bg-dark {
+    background-color: var(--background);
+}
+
+h3,
+h5,
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--white);
 }
 
 .search-button {
-    color: red;
-}
-
-.search-border {
-    border-color: darkgray;
+    color: var(--pink);
 }
 
 .rounded-50 {
     border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .rounded-10 {
     border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.bg-black {
+    background-color: var(--dark-gray);
+}
+
+.fa-line-chart {
+    color: var(--pink);
+}
+
+.fa { transform: scale(0.8, 0.8); }
+
+.fa-heart,
+.fa-cog,
+.fa-question-circle {
+    color: var(--white);
+}
+
+.fa-heart:hover,
+.fa-cog:hover,
+.fa-question-circle:hover {
+    color: var(--pink);
+}
+
+.fa-arrow-up,
+.highest > .stock-summary > .stock-variation > p {
+    color: var(--green);
+}
+
+.fa-arrow-down,
+.lowest > .stock-summary > .stock-variation > p {
+    color: var(--red);
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
