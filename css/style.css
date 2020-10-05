@@ -40,10 +40,6 @@ p {
     font-weight: 600;
 }
 
-.search-button {
-    color: var(--pink);
-}
-
 .border-bottom {
     border-color: var(--light-gray) !important;
     border-width: 2.5px !important;
@@ -66,6 +62,10 @@ p {
 .fa {
     transform: scale(0.8, 0.8);
     color: var(--white);
+}
+
+.search-button {
+    color: var(--pink);
 }
 
 .current-icon {
