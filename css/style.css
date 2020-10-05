@@ -169,3 +169,42 @@ p {
     width: 65%;
     height: 90%;
 }
+
+    @media (max-width: 730px) and (min-width: 480px) {
+        .mob-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-highest {
+            width: 90%;
+            margin: 3% 0%;
+        }
+
+        .highest {
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        .former-aside {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        .container-highest {
+            width: 100%;
+        }
+
+        .highest {
+            width: 100%;
+        }
+    }
