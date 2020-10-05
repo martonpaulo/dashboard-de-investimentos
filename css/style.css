@@ -63,23 +63,16 @@ p {
     background-color: var(--dark-gray);
 }
 
-.fa-line-chart {
-    color: var(--pink);
-}
-
 .fa {
     transform: scale(0.8, 0.8);
-}
-
-.fa-heart,
-.fa-cog,
-.fa-question-circle {
     color: var(--white);
 }
 
-.fa-heart:hover,
-.fa-cog:hover,
-.fa-question-circle:hover {
+.current-icon {
+    color: var(--pink);
+}
+
+.fa:hover {
     color: var(--pink);
 }
 
