@@ -1,181 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>Dashboard de Investimentos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dashboard de Investimentos</title>
 </head>
-<body class="text-white bg-dark vh-100">
-    <header>
-    </header>
-    <div class="container-fluid my-0 px-0 py-3 h-100">
-        <div class="row no-gutters m-0 h-100">
-            <aside class="col-sm-1 ml-auto bg-black rounded-50">
-                <nav class="my-3">
-                    <ul class="nav flex-column text-center py-5">
-                        <li class="nav-item mb-3">
-                            <div>
-                                <a href="index.html" class="nav-link px-0">
-                                    <span class="nav-fa fa fa-line-chart fa-2x current-icon"></span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <div>
-                                <a href="favorites.html" class="nav-link px-0">
-                                    <span class="nav-fa fa fa-heart fa-2x"></span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <div>
-                                <a href="settings.html" class="nav-link px-0">
-                                    <span class="nav-fa fa fa-cog fa-2x"></span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item mb-3">
-                            <div>
-                                <a href="about.html" class="nav-link px-0">
-                                    <span class="nav-fa fa fa-question-circle fa-2x"></span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </aside>
-            <main class="col-sm-10 mx-auto d-flex flex-column">
-                <section class="row no-gutters mx-0 my-3">
-                    <div class="col-sm-6">
-                        <div>
-                            <h3 class="m-0">Página Inicial</h3>
-                        </div>
-                        <div>
-                            <h5 class="m-0">Dashboard de Investimentos</h5>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 d-flex justify-content-end">
-                        <div>
-                            <div class="input-group border-bottom search-border">
-                                <div class="input-group-prepend">
-                                    <button class="btn" type="button">
-                                        <span class="fa fa-search search-button"></span>
-                                    </button>
-                                </div>
-                                <input type="text" class="form-control bg-transparent border-0" placeholder="procurar ativo">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="flex-fill d-flex flex-wrap">
-                    <section class="row mx-0 my-3 w-100 mob-container">
-                        <div class="col-6 pl-0">
-                            <div class="bg-black h-100 rounded-10 container-highest">
-                                <div class="highest">
-                                    <h4 class="text-canto">
-                                        <span class="fa fa-arrow-up"></span>
-                                        Maiores altas
-                                    </h4>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>WEGE3</p></div>
-                                        <div class="stock-variation"><p>+3,25%</p></div>
-                                        <div class="stock-price"><p>R$ 64,94</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>LAME4</p></div>
-                                        <div class="stock-variation"><p>+2,05%</p></div>
-                                        <div class="stock-price"><p>R$ 28,37</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>NTCO3</p></div>
-                                        <div class="stock-variation"><p>+1,97%</p></div>
-                                        <div class="stock-price"><p>R$ 49,69</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>FLRY3</p></div>
-                                        <div class="stock-variation"><p>+1.37%</p></div>
-                                        <div class="stock-price"><p>R$ 26,62</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>BRKM5</p></div>
-                                        <div class="stock-variation"><p>+1,10%</p></div>
-                                        <div class="stock-price"><p>R$ 20,04</p></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 pr-0">
-                            <div class="bg-black h-100 rounded-10 container-highest">
-                                <div class="lowest">
-                                    <h4 class="text-canto">
-                                        <span class="fa fa-arrow-down"></span>
-                                        Maiores baixas
-                                    </h4>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>AZUL4</p></div>
-                                        <div class="stock-variation"><p>-7,70%</p></div>
-                                        <div class="stock-price"><p>R$ 23,95</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>GOLL4</p></div>
-                                        <div class="stock-variation"><p>-5,72%</p></div>
-                                        <div class="stock-price"><p>R$ 16,47</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>EMBR3</p></div>
-                                        <div class="stock-variation"><p>-4,08%</p></div>
-                                        <div class="stock-price"><p>R$ 6,10</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>CVCB3</p></div>
-                                        <div class="stock-variation"><p>-3,87%</p></div>
-                                        <div class="stock-price"><p>R$ 15,62</p></div>
-                                    </div>
-                                    <div class="stock-summary border-bottom">
-                                        <div class="stock-name"><p>RAIL3</p></div>
-                                        <div class="stock-variation"><p>-3,77%</p></div>
-                                        <div class="stock-price"><p>R$ 19,14</p></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="mx-0 my-3 w-100 bg-black rounded-10 grafico-ini">
-                        <div class="escolha-graf">
-                            <button type="button">1D</button>
-                            <button>5D</button>
-                            <button>1M</button>
-                            <button>6M</button>
-                            <button>1A</button>
-                            <button>MAX</button>
-                        </div>
-                        <div class="bolsa-imagem">
-                            <div class="escolha-bolsa">
-                                <button>IBOVESPA</button>
-                                <button>IFIX</button>
-                                <button>Dólar</button>
-                                <button>Bitcoin</button>
-                            </div>
-                            <div class="grafico-imagem">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </main>
-        </div>
+<body>
+
+  <nav>
+    <div id="menu">
+
     </div>
-    <footer>
-    </footer>
+  </nav>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <div id="wrapper">
 
-    <script src="js/app.js"></script>
+    <div id="top">
+
+      <div id="title">
+        <h1>Página Inicial</h1>
+        <h2>Dashboard de Investimentos</h2>
+      </div>
+    
+      <div id="search">
+        <input type="text" placeholder="procurar ativo">
+      </div>
+
+    </div>
+    
+    <div id="boxes">
+      
+      <div id="highest">
+        <h3 class="box-title">
+          Maiores altas
+        </h3>
+        <div class="stock-summary">
+          <div class="stock-name"><p>WEGE3</p></div>
+          <div class="stock-variation"><p>+3,25%</p></div>
+          <div class="stock-price"><p>R$ 64,94</p></div>
+        </div>
+        <div class="stock-summary">
+          <div class="stock-name"><p>LAME4</p></div>
+          <div class="stock-variation"><p>+2,05%</p></div>
+          <div class="stock-price"><p>R$ 28,37</p></div>
+        </div>
+        <div class="stock-summary">
+          <div class="stock-name"><p>NTCO3</p></div>
+          <div class="stock-variation"><p>+1,97%</p></div>
+          <div class="stock-price"><p>R$ 49,69</p></div>
+        </div>
+        <div class="stock-summary">
+          <div class="stock-name"><p>FLRY3</p></div>
+          <div class="stock-variation"><p>+1.37%</p></div>
+          <div class="stock-price"><p>R$ 26,62</p></div>
+        </div>
+        <div class="stock-summary">
+          <div class="stock-name"><p>BRKM5</p></div>
+          <div class="stock-variation"><p>+1,10%</p></div>
+          <div class="stock-price"><p>R$ 20,04</p></div>
+        </div>
+      </div>
+    
+      <div id="lowest">
+        <h3 class="box-title">
+          Maiores baixas
+        </h3>
+        <div class="stock-summary border-bottom">
+          <div class="stock-name"><p>AZUL4</p></div>
+          <div class="stock-variation"><p>-7,70%</p></div>
+          <div class="stock-price"><p>R$ 23,95</p></div>
+        </div>
+        <div class="stock-summary border-bottom">
+          <div class="stock-name"><p>GOLL4</p></div>
+          <div class="stock-variation"><p>-5,72%</p></div>
+          <div class="stock-price"><p>R$ 16,47</p></div>
+        </div>
+        <div class="stock-summary border-bottom">
+          <div class="stock-name"><p>EMBR3</p></div>
+          <div class="stock-variation"><p>-4,08%</p></div>
+          <div class="stock-price"><p>R$ 6,10</p></div>
+        </div>
+        <div class="stock-summary border-bottom">
+          <div class="stock-name"><p>CVCB3</p></div>
+          <div class="stock-variation"><p>-3,87%</p></div>
+          <div class="stock-price"><p>R$ 15,62</p></div>
+        </div>
+        <div class="stock-summary border-bottom">
+          <div class="stock-name"><p>RAIL3</p></div>
+          <div class="stock-variation"><p>-3,77%</p></div>
+          <div class="stock-price"><p>R$ 19,14</p></div>
+        </div>
+      </div>
+    
+      <div id="indexes">
+      </div>
+  
+    </div>
+  
+  </div>
+  
 </body>
 </html>

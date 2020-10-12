@@ -1,210 +1,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap');
 
 :root {
-    --background: #393c45;
-    --dark-gray: #2f3035;
-    --gray: #4c4d4f;
-    --light-gray: #8d9097;
-    --red: #f92e3a;
-    --green: #33dd4e;
-    --pink: #e4558d;
-    --white: #fafbfd;
+  --background: #393c45;
+  --dark-gray: #2f3035;
+  --gray: #4c4d4f;
+  --light-gray: #8d9097;
+  --red: #f92e3a;
+  --green: #33dd4e;
+  --pink: #e4558d;
+  --white: #fafbfd;
+  font-size: 13px;
 }
 
-.bg-dark {
-    background-color: var(--background);
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
+html, body, #root {
+	height: 100vh;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  outline: 0;
+  vertical-align: middle;
+}
+
+h1,
+h2,
 h3,
-h4,
-h5,
 p {
-    font-family: 'Poppins', sans-serif;
-    color: var(--white);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
 }
 
 h3 {
-    font-weight: 700;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
+body {
+  background-color: var(--background);
+  display: flex;
 }
 
-h5 {
-    font-weight: 400;
+nav {
+  height: 100%;
+  width: 15%;
+  min-width: 50px;
 }
 
-p {
-    font-weight: 600;
+#menu {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.border-bottom {
-    border-color: var(--light-gray) !important;
-    border-width: 2.5px !important;
+#wrapper {
+  height: 100%;
+  width: 88%;
+  max-width: calc(100% - 50px);
+  padding: 0 30px 0;
 }
 
-.rounded-50 {
-    border-radius: 50px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.rounded-10 {
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.bg-black {
-    background-color: var(--dark-gray);
-}
-
-.fa {
-    transform: scale(0.8, 0.8);
-    color: var(--white);
-}
-
-.search-button {
-    color: var(--pink);
-}
-
-.current-icon {
-    color: var(--pink);
-}
-
-.fa:hover {
-    color: var(--pink);
-}
-
-.fa-arrow-up,
-.highest > .stock-summary > .stock-variation > p {
-    color: var(--green);
-}
-
-.fa-arrow-down,
-.lowest > .stock-summary > .stock-variation > p {
-    color: var(--red);
+#top {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .nav-fa {
-        font-size: 2.5em;
-    }
+#title {
+
 }
 
-@media (min-width: 992px) {
-    .nav-fa {
-        font-size: 3em;
-    }
+
+#search {
+  border-bottom: solid 2.5px var(--light-gray);
 }
 
-.container-highest {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+#search input {
+  color: var(--light-gray);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  background-color: var(--background);
+  border: none;
 }
 
-.highest, .lowest {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 5% 10% 5% 10%;
+#boxes {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.highest > h4,
-.lowest > h4 {
-    margin-bottom: 25px;
+#highest,
+#lowest,
+#indexes {
+  width: 100%;
+  height: 44.5%;
+  margin-bottom: 5%;
+  background-color: var(--dark-gray);
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-title {
+  margin-bottom: 5px;
 }
 
 .stock-summary {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1.5px var(--light-gray);
+  margin-bottom: 5px;
+  font-size: 0.9rem;
 }
 
-.grafico-ini {
-    height: 35%;
-    width: 72%;
-    background-color: #2F3035;
-    border-radius: 3% / 8%;
-    margin-left: 3.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
+.stock-name p,
+.stock-variation p,
+.stock-price p {
+  font-family: 'Source Code Pro', monospace;
 }
 
-.escolha-graf {
-    display: flex;
-    width: 30%;
-    height: 20%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 5%;
-    align-items: center;
-    align-self: flex-end;
+#highest .stock-variation p {
+  color: var(--green);
 }
 
-.escolha-bolsa {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 25%;
+#lowest .stock-variation p {
+  color: var(--red);
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+
+  #menu {
+    width: 50%;
     height: 90%;
+    position: relative;
+    top: 5%;
+    left: 25%;
+    border-radius: 25px;
+  }
+
+  #wrapper {
+    padding: 0 5% 0 1%;
+  }
+
+  #highest,
+  #lowest,
+  #indexes {
+    margin-bottom: 0%;
+  }
+
+  #highest,
+  #lowest {
+    width: 49%;
+  }
+
+  #highest {
+    margin-right: 2%;
+  }
+
+  #indexes {
+    width: 100%;
+  }
 }
-
-.bolsa-imagem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: 70%;
-    align-self: center;
-}
-
-.grafico-imagem {
-    width: 65%;
-    height: 90%;
-}
-
-    @media (max-width: 730px) and (min-width: 480px) {
-        .mob-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .container-highest {
-            width: 90%;
-            margin: 3% 0%;
-        }
-
-        .highest {
-            width: 100%;
-        }
-
-    }
-
-    @media (max-width: 480px) {
-        .former-aside {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        
-        .container-highest {
-            width: 100%;
-        }
-
-        .highest {
-            width: 100%;
-        }
-    }
