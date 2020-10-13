@@ -149,7 +149,7 @@ a ion-icon:hover {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .box {
