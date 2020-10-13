@@ -461,3 +461,8 @@ button:hover {
     width: 100%;
   }
 }
+
+#primeiroGrafico {
+  max-height: 100%;
+
+}

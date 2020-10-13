@@ -30,6 +30,8 @@ async function addBox (queryString) {
     let price = r.HOJE;
     let variation = r.VARIACAO;
 
+    box.setAttribute("id", code);
+
     if (name.length > 17) {
       name = name.substring(0, 18) + '...';
     }
@@ -49,7 +51,7 @@ async function addBox (queryString) {
           <div class="stock-code"><p>${code}</p></div>
           <div class="stock-name"><p>${name}</p></div>
         </div>
-        <button class="favorite"><ion-icon name="heart"></ion-icon></button>  
+        <button class="favorite" onclick="favoritar()"><ion-icon name="heart"></ion-icon></button>  
       </div>
 
       <div class="second-line">
