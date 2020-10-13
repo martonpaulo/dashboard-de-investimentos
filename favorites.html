@@ -27,135 +27,187 @@
     <div id="top">
 
       <div id="title">
-        <h1>Página Inicial</h1>
-        <h2>Dashboard de Investimentos</h2>
+        <h1>Favoritos</h1>
       </div>
     
       <div id="search">
-        <ion-icon name="search-outline"></ion-icon>
-        <input type="text" placeholder="procurar ativo">
+        <input type="text" placeholder="buscar">
+        <button><ion-icon name="search-outline"></ion-icon></button>
       </div>
 
     </div>
     
     <div id="boxes">
       
-      <div id="highest">
-        <h3 class="box-title">
-          <ion-icon name="arrow-up"></ion-icon>
-          Maiores altas
-        </h3>
+      <div class="box">
+        <div class="first-line">
+          <div class="code-and-name">
+            <div class="stock-code"><p>MGLU3</p></div>
+            <div class="stock-name"><p>Magazine Luiza SA</p></div>
+          </div>
+          <button class="favorite"><ion-icon name="heart-dislike"></ion-icon></button>  
+        </div>
 
-        <a>
-          <div class="stock-summary">
-            <div class="stock-name"><p>WEGE3</p></div>
-            <div class="stock-variation"><p>+3,25%</p></div>
-            <div class="stock-price"><p>R$ 64,94</p></div>
-          </div>
-        </a>
-
-        <a>
-          <div class="stock-summary">
-            <div class="stock-name"><p>LAME4</p></div>
-            <div class="stock-variation"><p>+2,05%</p></div>
-            <div class="stock-price"><p>R$ 28,37</p></div>
-          </div>
-        </a>
-
-        <a>
-          <div class="stock-summary">
-            <div class="stock-name"><p>NTCO3</p></div>
-            <div class="stock-variation"><p>+1,97%</p></div>
-            <div class="stock-price"><p>R$ 49,69</p></div>
-          </div>
-        </a>
-        
-        <a>
-          <div class="stock-summary">
-            <div class="stock-name"><p>FLRY3</p></div>
-            <div class="stock-variation"><p>+1.37%</p></div>
-            <div class="stock-price"><p>R$ 26,62</p></div>
-          </div>
-        </a>
-
-        <a>
-          <div class="stock-summary">
-            <div class="stock-name"><p>BRKM5</p></div>
-            <div class="stock-variation"><p>+1,10%</p></div>
-            <div class="stock-price"><p>R$ 20,04</p></div>
-          </div>
-        </a>
-      </div>
-    
-      <div id="lowest">
-        
-        <h3 class="box-title">
-          <ion-icon name="arrow-down"></ion-icon>
-          Maiores baixas
-        </h3>
-
-        <a>
-          <div class="stock-summary border-bottom">
-            <div class="stock-name"><p>AZUL4</p></div>
-            <div class="stock-variation"><p>-7,70%</p></div>
-            <div class="stock-price"><p>R$ 23,95</p></div>
-          </div>
-        </a>
-
-        <a>
-          <div class="stock-summary border-bottom">
-            <div class="stock-name"><p>GOLL4</p></div>
-            <div class="stock-variation"><p>-5,72%</p></div>
-            <div class="stock-price"><p>R$ 16,47</p></div>
-          </div>
-        </a>
-
-          <a>
-          <div class="stock-summary border-bottom">
-            <div class="stock-name"><p>EMBR3</p></div>
-            <div class="stock-variation"><p>-4,08%</p></div>
-            <div class="stock-price"><p>R$ 6,10</p></div>
-          </div>
-        </a>
-
-        <a>
-          <div class="stock-summary border-bottom">
-            <div class="stock-name"><p>CVCB3</p></div>
-            <div class="stock-variation"><p>-3,87%</p></div>
-            <div class="stock-price"><p>R$ 15,62</p></div>
-          </div>
-        </a>
-
-        <a>
-          <div class="stock-summary border-bottom">
-            <div class="stock-name"><p>RAIL3</p></div>
-            <div class="stock-variation"><p>-3,77%</p></div>
-            <div class="stock-price"><p>R$ 19,14</p></div>
-          </div>
-        </a>
-      </div>
-    
-      <div id="indexes">
-        
-        <div class="time-selection">
-          <button class="selected">1D</button>
-          <button>5D</button>
-          <button>1M</button>
-          <button>6M</button>
-          <button>1A</button>
-          <button>3A</button>
+        <div class="second-line">
+          <div class="stock-price"><p>R$ 90,63</p></div>
+          <div class="stock-variation low"><p>-1,49%</p></div>
         </div>
         
-        <div id="index-selection-and-chart">
-          <div id="index-selection">
-            <button class="selected">IBOV</button>
-            <button>IFIX</button>
-            <button>USD</button>
-            <button>BTC</button>
+        <div class="third-line">
+          <div class="time-selection">
+            <button class="selected">1D</button>
+            <button>5D</button>
+            <button>1M</button>
+            <button>6M</button>
+            <button>1A</button>
+            <button>3A</button>
           </div>
+  
           <div class="chart"></div>
         </div>
+      </div>
 
+      <div class="box">
+        <div class="first-line">
+          <div class="code-and-name">
+            <div class="stock-code"><p>MGLU3</p></div>
+            <div class="stock-name"><p>Magazine Luiza SA</p></div>
+          </div>
+          <button class="favorite"><ion-icon name="heart-dislike"></ion-icon></button>  
+        </div>
+
+        <div class="second-line">
+          <div class="stock-price"><p>R$ 90,63</p></div>
+          <div class="stock-variation high"><p>+1,49%</p></div>
+        </div>
+        
+        <div class="third-line">
+          <div class="time-selection">
+            <button class="selected">1D</button>
+            <button>5D</button>
+            <button>1M</button>
+            <button>6M</button>
+            <button>1A</button>
+            <button>3A</button>
+          </div>
+  
+          <div class="chart"></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="first-line">
+          <div class="code-and-name">
+            <div class="stock-code"><p>MGLU3</p></div>
+            <div class="stock-name"><p>Magazine Luiza SA</p></div>
+          </div>
+          <button class="favorite"><ion-icon name="heart-dislike"></ion-icon></button>  
+        </div>
+
+        <div class="second-line">
+          <div class="stock-price"><p>R$ 90,63</p></div>
+          <div class="stock-variation low"><p>-1,49%</p></div>
+        </div>
+        
+        <div class="third-line">
+          <div class="time-selection">
+            <button class="selected">1D</button>
+            <button>5D</button>
+            <button>1M</button>
+            <button>6M</button>
+            <button>1A</button>
+            <button>3A</button>
+          </div>
+  
+          <div class="chart"></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="first-line">
+          <div class="code-and-name">
+            <div class="stock-code"><p>MGLU3</p></div>
+            <div class="stock-name"><p>Magazine Luiza SA</p></div>
+          </div>
+          <button class="favorite"><ion-icon name="heart-dislike"></ion-icon></button>  
+        </div>
+
+        <div class="second-line">
+          <div class="stock-price"><p>R$ 90,63</p></div>
+          <div class="stock-variation high"><p>+1,49%</p></div>
+        </div>
+        
+        <div class="third-line">
+          <div class="time-selection">
+            <button class="selected">1D</button>
+            <button>5D</button>
+            <button>1M</button>
+            <button>6M</button>
+            <button>1A</button>
+            <button>3A</button>
+          </div>
+  
+          <div class="chart"></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="first-line">
+          <div class="code-and-name">
+            <div class="stock-code"><p>MGLU3</p></div>
+            <div class="stock-name"><p>Magazine Luiza SA</p></div>
+          </div>
+          <button class="favorite"><ion-icon name="heart-dislike"></ion-icon></button>  
+        </div>
+
+        <div class="second-line">
+          <div class="stock-price"><p>R$ 90,63</p></div>
+          <div class="stock-variation low"><p>-1,49%</p></div>
+        </div>
+        
+        <div class="third-line">
+          <div class="time-selection">
+            <button class="selected">1D</button>
+            <button>5D</button>
+            <button>1M</button>
+            <button>6M</button>
+            <button>1A</button>
+            <button>3A</button>
+          </div>
+  
+          <div class="chart"></div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="first-line">
+          <div class="code-and-name">
+            <div class="stock-code"><p>MGLU3</p></div>
+            <div class="stock-name"><p>Magazine Luiza SA</p></div>
+          </div>
+          <button class="favorite"><ion-icon name="heart-dislike"></ion-icon></button>  
+        </div>
+
+        <div class="second-line">
+          <div class="stock-price"><p>R$ 90,63</p></div>
+          <div class="stock-variation high"><p>+1,49%</p></div>
+        </div>
+        
+        <div class="third-line">
+          <div class="time-selection">
+            <button class="selected">1D</button>
+            <button>5D</button>
+            <button>1M</button>
+            <button>6M</button>
+            <button>1A</button>
+            <button>3A</button>
+          </div>
+  
+          <div class="chart"></div>
+        </div>
+      </div>
+
+      <div id="push-box">
       </div>
 
     </div>

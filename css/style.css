@@ -149,6 +149,110 @@ a ion-icon:hover {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 20px;
+  background-color: var(--dark-gray);
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box button.favorite  {
+  width: 15%;
+  background-color: transparent;
+  border: none;
+}
+
+.box button.favorite ion-icon {
+  cursor: pointer;
+}
+
+.box button.favorite ion-icon:hover {
+  color: var(--pink);
+}
+
+.stock-code p,
+.stock-variation p,
+.stock-price p {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.code-and-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.box .stock-code p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.box .stock-name p {
+  font-size: 0.9rem;
+  margin-left: 12px;
+}
+
+.second-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.box .stock-price p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.box .stock-variation p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.low p {
+  color: var(--red);
+}
+
+.high p {
+  color: var(--green);
+}
+
+.third-line {
+  height: 70%;
+}
+
+.box .time-selection {
+  height: 15%;
+}
+
+.box button {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.box .chart {
+  height: 85%;
+  width: 100%;
+  background-color: var(--gray);
+}
+
+#push-box {
+  height: 50px;
+  width: 100%;
 }
 
 #full-box {
@@ -229,12 +333,6 @@ a ion-icon:hover {
   border-bottom: solid 1.5px var(--light-gray);
   margin-bottom: 5px;
   font-size: 0.9rem;
-}
-
-.stock-name p,
-.stock-variation p,
-.stock-price p {
-  font-family: 'Source Code Pro', monospace;
 }
 
 #highest .stock-variation p,
