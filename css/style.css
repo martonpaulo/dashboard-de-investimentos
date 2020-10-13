@@ -97,6 +97,7 @@ a ion-icon:hover {
 
 #wrapper {
   height: 100%;
+  width: 100%;
   padding: 0 30px 0;
 }
 
@@ -137,6 +138,35 @@ a ion-icon:hover {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
+}
+
+#full-box {
+  width: 100%;
+  background-color: var(--dark-gray);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+#full-box button {
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 12px;
+}
+
+#full-box button#export {
+  margin: 2rem 0 0 2rem;
+}
+
+#full-box button#import {
+  margin: 1.5rem 0 2rem 2rem;
+}
+
+.about-section {
+  margin: 2rem 2rem 0.5rem 2rem;
+}
+.last-about-section {
+  margin-bottom: 2rem;
 }
 
 #highest,
