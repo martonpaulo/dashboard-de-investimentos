@@ -72,6 +72,7 @@ body {
 #menu {
   width: 100%;
   height: 8%;
+  min-height: 50px;
   background-color: var(--dark-gray);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -80,6 +81,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 2;
 }
 
 ion-icon {
@@ -313,6 +315,11 @@ a ion-icon:hover {
   justify-content: space-between;
 }
 
+#highest,
+#lowest {
+  max-width: 300px;
+}
+
 #highest ion-icon,
 #lowest ion-icon {
   font-size: 1rem;
@@ -443,6 +450,7 @@ button:hover {
   #highest,
   #lowest {
     width: 49%;
+    max-width: none;
   }
 
   #highest {
