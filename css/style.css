@@ -112,25 +112,36 @@ a ion-icon:hover {
 
 #search {
   border-bottom: solid 2.5px var(--light-gray);
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
 }
 
-#search ion-icon {
-  font-size: 1.5rem;
-  color: var(--pink);
-  margin-bottom: 10px;
-}
-
 #search input {
   width: 80%;
-  color: var(--light-gray);
+  color: var(--white);
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 10px;
   background-color: var(--background);
   border: none;
+}
+
+#search button {
+  width: 15%;
+  background-color: transparent;
+  border: none;
+}
+
+#search ion-icon {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#search ion-icon:hover {
+  color: var(--pink);
 }
 
 #boxes {
