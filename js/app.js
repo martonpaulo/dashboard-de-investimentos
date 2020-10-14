@@ -24,21 +24,26 @@ async function selectedPeriodo() {
     }
     
   }
+
   this.document.activeElement.classList.add("selected");
 
   var primeiroGrafico = document.getElementById('primeiroGrafico').getContext('2d');
+
+
               
   var chart = new Chart(primeiroGrafico, {
       type: 'line',
+      
 
       data: {
-          labels: ['2000', '2001', '2002', '2003', '2004', '2005'],
+          labels: ['13/10', '12/10', '11/10', '10/10', '9/10'],
 
           datasets: [{
                   label: '',
-                  data: [173448346, 1600000, 178276128, 180619108, 182911487],
+                  data: [, 1600000, 178276128, 180619108, 182911487],
                   backgroundColor: "rgba(255, 34, 0, 0.3)",
-                  borderColor: "#0000ff"
+                  borderColor: "#0000ff",
+                  lineTension: 0
               },
               
           ]

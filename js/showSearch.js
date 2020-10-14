@@ -25,6 +25,8 @@ async function addBox (queryString) {
     var box = document.createElement('div');
     box.className = 'box';
 
+  
+
     let code = r.COD;
     let name = r.NOME;
     let price = r.HOJE;
