@@ -78,6 +78,8 @@ function porcentagem(n) {
 async function selectedPeriodo2() {
   const pegandoID = this.document.activeElement.parentElement.parentElement
     .parentElement.id;
+  
+  console.log(this);
   const indexados = document.querySelectorAll(
     `#${pegandoID} .third-line .time-selection button`
   );
@@ -247,7 +249,7 @@ async function selectedPeriodo2() {
   }
 
   var segundoGrafico = document
-    .getElementById("segundoGrafico")
+    .getElementById(`grafico${pegandoID}`)
     .getContext("2d");
 
   var chart = new Chart(segundoGrafico, {

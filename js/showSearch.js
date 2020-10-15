@@ -72,7 +72,7 @@ async function addBox (queryString) {
         </div>
 
         <div class="chart">
-          <canvas id="segundoGrafico"></canvas>
+          <canvas id="grafico${code}"></canvas>
         </div>
       </div>
     `;
