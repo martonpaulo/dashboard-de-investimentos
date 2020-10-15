@@ -63,15 +63,17 @@ async function addBox (queryString) {
       
       <div class="third-line">
         <div class="time-selection">
-          <button class="selected">1D</button>
-          <button>5D</button>
-          <button>1M</button>
-          <button>6M</button>
-          <button>1A</button>
-          <button>5A</button>
+          <button onclick="selectedPeriodo2()" class="selected">1D</button>
+          <button onclick="selectedPeriodo2()">5D</button>
+          <button onclick="selectedPeriodo2()">1M</button>
+          <button onclick="selectedPeriodo2()">6M</button>
+          <button onclick="selectedPeriodo2()">1A</button>
+          <button onclick="selectedPeriodo2()">5A</button>
         </div>
 
-        <div class="chart"></div>
+        <div class="chart">
+          <canvas id="segundoGrafico"></canvas>
+        </div>
       </div>
     `;
 
