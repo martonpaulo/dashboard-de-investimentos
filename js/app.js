@@ -1,9 +1,3 @@
-function search() {
-  var inputData = document.getElementById("search-input").value;
-
-  window.location.href = "./search.html?query=" + inputData;
-}
-
 async function selected() {
   const acoesPrinci = document.querySelectorAll("#index-selection button");
   for (i in acoesPrinci) {

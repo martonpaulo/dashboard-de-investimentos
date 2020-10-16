@@ -1,52 +1,38 @@
-window.onload = (event) => {
-
-  const queryString = window.location.search.replace('?query=','');;
-
-  var pageTitle = document.getElementById("title");
-
-  var h = document.createElement("H1");
-  var t = document.createTextNode(`Resultados para "${queryString}"`);
-  h.appendChild(t); 
-  pageTitle.appendChild(h);
-
-  addBox(queryString);
-
-};
-
 async function addBox (queryString) {
 
+  // get data from API
   const url = `https://sheet.best/api/sheets/326958cd-35bc-41a7-b0c2-57cbce2e8ed8/COD/*${queryString.toUpperCase()}*`;
 	const response = await fetch(url);
   const result = await response.json();
 
-
+  // iterate over data from API
   for (const r of result) {
 
-    var box = document.createElement('div');
-    box.className = 'box';
-
-  
-
     let code = r.COD;
-    let name = r.NOME;
     let price = r.HOJE;
     let variation = r.VARIACAO;
+    let name = r.NOME;
 
+    // create box
+    const box = document.createElement('div');
+    box.className = 'box';
     box.setAttribute("id", code);
 
-    if (name.length > 17) {
+    // trunc text if it is too long
+    if (name.length > 17)
       name = name.substring(0, 18) + '...';
-    }
 
+    // change class depending on stock variation (high/low)
     let variationColor;
 
-    if (variation.substring(0, 1) == '-') {
+    if (variation.substring(0, 1) === '-') {
       variationColor = 'low';
     } else {
       variation = '+' + variation;
       variationColor = 'high';
     }
 
+    // create stock box
     box.innerHTML = `
       <div class="first-line">
         <div class="code-and-name">
